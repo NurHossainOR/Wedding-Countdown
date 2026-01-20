@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 
+export const dynamic = 'force-dynamic'
+
 // This is a one-time seed route to populate daily messages
 // You can call this once to set up your messages
 

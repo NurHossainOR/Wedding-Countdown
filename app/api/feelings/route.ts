@@ -3,6 +3,8 @@ import { getServerSession } from '@/lib/get-session'
 import { prisma } from '@/lib/prisma'
 import { getTodayDate } from '@/lib/utils'
 
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     const session = await getServerSession()
